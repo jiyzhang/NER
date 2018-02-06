@@ -1,0 +1,10 @@
+{"data":
+[ {"document_id": "1", "phrase_id": "1865", "foolnltk": {"words": [], "pos_tags": [], "ner_tags": [], "char_offsets": []}},
+  {"document_id": "1", "phrase_id": "1867", "foolnltk": {"words": ["\u4e2d\u56fd\u56fd\u65c5 ", "2013"], "pos_tags": [], "ner_tags": ["COMPANY", "TIME"], "char_offsets": [17, 28]}},
+  {"document_id": "1", "phrase_id": "1868", "foolnltk": {"words": ["\u4e2d\u56fd\u56fd\u65c5\u80a1\u4efd\u6709\u9650\u516c\u53f8"], "pos_tags": [], "ner_tags": ["COMPANY"], "char_offsets": [0]}}, {"document_id": "1", "phrase_id": "1870", "foolnltk": {"words": [], "pos_tags": [], "ner_tags": [], "char_offsets": []}},
+  {"document_id": "1", "phrase_id": "1872", "foolnltk": {"words": ["\u76d1\u4e8b"], "pos_tags": [], "ner_tags": ["JOB"], "char_offsets": [9]}},
+  {"document_id": "1", "phrase_id": "1874", "foolnltk": {"words": ["\u4e2d\u56fd\u56fd\u65c5\u80a1\u4efd\u6709\u9650\u516c\u53f8", "2013\u5e748\u670829\u65e5", "\u76d1\u4e8b\u4f1a\u4e3b\u5e2d", "\u6768\u6668\u5149"], "pos_tags": [], "ner_tags": ["COMPANY", "TIME", "JOB", "PERSON"], "char_offsets": [0, 32, 56, 61]}},
+  {"document_id": "1", "phrase_id": "1876", "foolnltk": {"words": ["\u76d1\u4e8b", "\u76d1\u4e8b", "\u6768\u6668\u5149", "\u5362\u8def", "\u9648\u73b2\u73b2"], "pos_tags": [], "ner_tags": ["JOB", "JOB", "PERSON", "PERSON", "PERSON"], "char_offsets": [6, 13, 18, 22, 25]}},
+  {"document_id": "1", "phrase_id": "1878", "foolnltk": {"words": ["\u738b\u6653\u96ef", "\u76d1\u4e8b", "\u6768\u6668\u5149", "\u76d1\u4e8b", "\u76d1\u4e8b", "\u9648\u73b2\u73b2", "\u76d1\u4e8b"], "pos_tags": [], "ner_tags": ["PERSON", "JOB", "PERSON", "JOB", "JOB", "PERSON", "JOB"], "char_offsets": [0, 3, 19, 22, 40, 56, 59]}}
+]
+}

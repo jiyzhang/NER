@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a4270f69-6765-4d65-a462-72ad7a507a35" name="boson" url="http://10.18.0.154">
+        <fileTransfer host="10.18.0.154" port="22" rootFolder="/home/snorkel-admin/zhangjiyong/project" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
