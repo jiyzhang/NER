@@ -1,5 +1,10 @@
 # -*- coding:utf-8 -*-
 
+"""
+处理空格的部分，原始sentence来自nerstat/boson_phrases.txt.
+如果nerstat/boson_phrases.txt里面无空格，则spaceinfo为空
+"""
+
 import sys
 sys.path.append(".")
 
@@ -182,6 +187,7 @@ class find_overlaps(unittest.TestCase):
                 doc_id, sentence = myDocDic[phrase_id]
                 boson_entities_info = nerstat.find_boson_entity(doc_id, phrase_id)
                 # ----------------------------------------------------------
+
 
                 # update space info
                 spaceinfo = self.getspaceinfo(sentence)
@@ -411,11 +417,11 @@ class find_overlaps(unittest.TestCase):
             jsonObject["stats"] = jsonObjArray
             #
             print "*" * 20
-            print "writing to : o_" + str(i) + ".json"
+            print "writing to : test_o_" + str(i) + ".json"
 
             # demjson.encode_to_file("./" + str(i) + ".json", encoding="utf-8")
 
-            with open("o_" + str(i) +  ".json", "w") as fp:
+            with open("test_o_" + str(i) +  ".json", "w") as fp:
                 json.dump(jsonObject, fp)
             print "done."
 
