@@ -1,5 +1,7 @@
 # NER
 To run ltp.py, you need to download ltp models and put it under ltp/ltp_data
+
+```
 ......
 ├── bosonner.py
 ├── corenlp.py
@@ -20,3 +22,4 @@ To run ltp.py, you need to download ltp models and put it under ltp/ltp_data
 │       └── version
 ├── ltp.py
 ....
+```
