@@ -20,6 +20,18 @@ import multiprocessing
 # sys.setdefaultencoding("utf-8")
 
 class FoolNER(object):
+
+    def __init__(self):
+        # 是否可以加载多个字典文件？
+        """
+        def load_userdict(path):
+            _DICTIONARY.add_dict(path)
+        """
+        fool.load_userdict("mydic/hushen_company.txt")
+        fool.load_userdict("mydic/company.dic")
+        fool.load_userdict("mydic/name.dic")
+        fool.load_userdict("mydic/term.dic")
+
     def parse(self, text):
 
         results = []
@@ -31,7 +43,9 @@ class FoolNER(object):
         entity_lens = []
         tmp_words, ners = fool.analysis(text)
 
-        for ner in ners:
+        # ners: [[(12, 23, 'time', '2016-08-22'), (56, 61, 'company', '天基新材'),....]]
+        #for ner in ners:    //requried after load_userdict
+        for ner in ners[0]:
             char_offsets.append(ner[0])
             word = ner[3]
             words.append(word)

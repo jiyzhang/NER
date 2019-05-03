@@ -46,7 +46,7 @@ class CoreNLPNer(Recognizer):
     # CoreNLP changed some JSON element names across versions
     # BLOCK_DEFS = {"3.6.0":"basic-dependencies", "3.7.0":"basicDependencies"}
     # modified by zhengshun to employ corenlp 3.8.0
-    BLOCK_DEFS = {"3.6.0":"basic-dependencies", "3.7.0":"basicDependencies", "3.8.0":"basicDependencies"}
+    BLOCK_DEFS = {"3.6.0":"basic-dependencies", "3.7.0":"basicDependencies", "3.8.0":"basicDependencies" , "3.9.0":"basicDependencies"}
 
     # def __init__(self, annotators=['tokenize', 'ssplit', 'pos', 'lemma', 'ner'],
     #              annotator_opts={}, tokenize_whitespace=False,
@@ -58,7 +58,7 @@ class CoreNLPNer(Recognizer):
                  annotator_opts={}, tokenize_whitespace=False,
                  split_newline=False, encoding="utf-8", java_xmx='4g',
                  port=12345, num_threads=1, delimiter=None, verbose=False,
-                 version='3.8.0'):
+                 version='3.9.0'):
         '''
         Create CoreNLP server instance.
         :param annotators:
@@ -88,8 +88,8 @@ class CoreNLPNer(Recognizer):
 
         # configure connection request options
         opts = self._conn_opts(annotators, annotator_opts, tokenize_whitespace, split_newline, delimiter)
-        #self.endpoint = 'http://127.0.0.1:%d/?%s' % (self.port, opts)
-        self.endpoint = 'http://10.18.0.154:%d/?%s' % (self.port, opts)
+        self.endpoint = 'http://127.0.0.1:%d/?%s' % (self.port, opts)
+        #self.endpoint = 'http://10.18.0.154:%d/?%s' % (self.port, opts)
         ##self._start_server()
 
         if self.verbose:

@@ -1,3 +1,5 @@
 ltp
 *.zip
-
+*.json
+*.orig
+*.pyc

@@ -31,6 +31,7 @@ class LTPNer(object):
         parent_path = os.path.dirname(d)
 
         LTP_DATA_DIR = parent_path + "/ltp/ltp_data"
+        LTP_EXT_DIC = parent_path + "/mydic/ltp_all.dic"
 
         # print LTP_DATA_DIR
 
@@ -41,7 +42,8 @@ class LTPNer(object):
 
         # 加载模型
         self.segmentor = Segmentor()
-        self.segmentor.load(cws_model_path)
+        # 加载自定义词典
+        self.segmentor.load_with_lexicon(cws_model_path, LTP_EXT_DIC)
 
         self.postagger = Postagger()
         self.postagger.load(pos_model_path)
